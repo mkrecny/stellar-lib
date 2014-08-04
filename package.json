@@ -14,33 +14,33 @@
   "directories": {
     "test": "test"
   },
-    "dependencies": {
-        "async": "~0.9.0",
-        "ws": "~0.4.31",
-        "extend": "~1.2.1",
-        "lru-cache": "~2.5.0",
-        "superagent": "^0.18.0",
-        "gulp-uglify": "~0.3.0",
-        "gulp-rename": "~1.2.0",
-        "tweetnacl": "git+ssh://git@github.com:stellar/tweetnacl-js.git"
-    },
-    "devDependencies": {
-        "mocha": "~1.14.0",
-        "gulp": "~3.6.2",
-        "gulp-concat": "~2.2.0",
-        "gulp-jshint": "~1.5.5",
-        "webpack": "~1.1.11",
-        "map-stream": "~0.1.0",
-        "istanbul": "~0.2.10",
-        "coveralls": "~2.10.0",
-        "nock": "^0.34.1"
-    },
-    "scripts": {
-        "build": "node_modules/.bin/gulp",
-        "pretest": "node_modules/.bin/gulp concat-sjcl",
-        "test": "./node_modules/.bin/istanbul test -x build/sjcl.js -x src/js/jsbn/* ./node_modules/.bin/_mocha -- --reporter spec test/*-test.js",
-        "coveralls": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls"
-    },
+  "dependencies": {
+    "async": "~0.9.0",
+    "extend": "~1.2.1",
+    "gulp-rename": "~1.2.0",
+    "gulp-uglify": "~0.3.0",
+    "lru-cache": "~2.5.0",
+    "superagent": "^0.18.0",
+    "tweetnacljs": "^0.9.1",
+    "ws": "~0.4.31"
+  },
+  "devDependencies": {
+    "mocha": "~1.14.0",
+    "gulp": "~3.6.2",
+    "gulp-concat": "~2.2.0",
+    "gulp-jshint": "~1.5.5",
+    "webpack": "~1.1.11",
+    "map-stream": "~0.1.0",
+    "istanbul": "~0.2.10",
+    "coveralls": "~2.10.0",
+    "nock": "^0.34.1"
+  },
+  "scripts": {
+    "build": "node_modules/.bin/gulp",
+    "pretest": "node_modules/.bin/gulp concat-sjcl",
+    "test": "./node_modules/.bin/istanbul test -x build/sjcl.js -x src/js/jsbn/* ./node_modules/.bin/_mocha -- --reporter spec test/*-test.js",
+    "coveralls": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls"
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/stellar/stellar-lib.git"

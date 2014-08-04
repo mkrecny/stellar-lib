@@ -1,5 +1,5 @@
 var sjcl = require('./utils').sjcl;
-var tnacl = require('tweetnacl');
+var tnacl = require('tweetnacljs');
 
 var UInt160 = require('./uint160').UInt160;
 var UInt256 = require('./uint256').UInt256;
